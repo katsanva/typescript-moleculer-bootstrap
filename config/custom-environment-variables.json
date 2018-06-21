@@ -1,0 +1,11 @@
+{
+  "moleculer": {
+    "broker": {
+      "namespace": "NODE_ENV",
+      "transporter": "SERVICE_TRANSPORTER",
+      "cacher": "SERVICE_CACHER",
+      "logger": "SERVICE_LOGGER",
+      "logLevel": "SERVICE_LOG_LEVEL"
+    }
+  }
+}

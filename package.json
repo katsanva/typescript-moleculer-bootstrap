@@ -1,0 +1,37 @@
+{
+  "name": "typescript-moleculer-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/app",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "nodemon --watch dist bin/app",
+    "test": "jest src",
+    "coverage": "npm run test -- --coverage",
+    "watch:coverage": "npm run coverage -- --watch",
+    "watch:test": "npm run test -- --watch",
+    "build": "npm run build:ts",
+    "build:ts": "tsc",
+    "watch:build:ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.20",
+    "@types/config": "0.0.34",
+    "@types/node": "^10.3.4",
+    "jest": "^22.4.2",
+    "nodemon": "^1.17.1",
+    "ts-jest": "^22.0.4",
+    "ts-node": "^5.0.0",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "config": "^1.30.0",
+    "moleculer": "^0.12.8",
+    "moleculer-decorators": "^1.0.14"
+  }
+}
